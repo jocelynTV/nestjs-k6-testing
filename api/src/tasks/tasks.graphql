@@ -1,0 +1,12 @@
+scalar Date
+
+type Task {
+  id: String!
+  title: String!
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+type Query {
+  tasks: [Task]!
+}
