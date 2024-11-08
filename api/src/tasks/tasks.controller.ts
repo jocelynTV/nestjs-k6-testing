@@ -8,7 +8,7 @@ import { TasksGateway } from './tasks.gateway';
 @Controller('tasks')
 export class TasksController {
   constructor(
-    private tasksService: TasksService,
+    private readonly tasksService: TasksService,
     private readonly tasksGateway: TasksGateway
   ) {}
 
